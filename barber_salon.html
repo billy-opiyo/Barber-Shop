@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LUXE • Barbershop & Salon | Nairobi</title>
+		<!-- Fonts & Icons -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="icon" href="IMG/luxe.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="CSS/style.css" />
+		<script src="JS/script.js" defer></script>
+	</head>
+	<body>
+		<!-- Top contact bar (visible on all pages) -->
+		<div class="top-bar">
+			<div class="container">
+				<div class="contact-strip">
+					<span
+						><i class="fas fa-phone-alt"></i>
+						<a
+							href="tel:+254700123456"
+							style="color: inherit; text-decoration: none"
+							>+254 700 123 456</a
+						></span
+					>
+					<span><i class="fas fa-envelope"></i> hello@luxebarber.nairobi</span>
+					<span><i class="fas fa-map-pin"></i> Westlands, Nairobi</span>
+				</div>
+				<div class="social-top">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-tiktok"></i></a>
+					<button
+						class="dark-mode-toggle"
+						id="darkModeToggle"
+						aria-label="Toggle dark mode"
+					>
+						<i class="fas fa-moon"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sticky navigation -->
+		<nav class="navbar" aria-label="Main navigation">
+			<div class="container nav-container">
+				<div class="logo">
+					LUXE<span>•</span>BARBER <span class="est">est. 2018</span>
+				</div>
+				<button
+					class="menu-toggle"
+					id="menuToggle"
+					type="button"
+					title="Toggle navigation menu"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="nav-links" id="navLinks">
+					<a href="#home" class="active">Home</a>
+					<a href="#services">Services</a>
+					<a href="#gallery">Gallery</a>
+					<a href="#booking">Book</a>
+					<a href="#testimonials">Reviews</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-- HERO SECTION -->
+			<section id="home" class="hero">
+				<div class="container hero-grid">
+					<div class="hero-content">
+						<h1><i>Luxury</i> Haircuts & Styles in Nairobi</h1>
+						<p class="hero-highlight">
+							Where precision meets warmth — classic barbering, modern styling,
+							and organic care.
+						</p>
+						<div class="hero-buttons">
+							<a href="#booking" class="btn"
+								>Book Appointment <i class="fas fa-arrow-right"></i
+							></a>
+							<a href="#services" class="btn btn-outline">Explore Services</a>
+						</div>
+						<div
+							style="
+								margin-top: 40px;
+								display: flex;
+								gap: 20px;
+								color: var(--deep-brown);
+							"
+						>
+							<span
+								><i class="fas fa-star gold-accent"></i> 4.95 (340+
+								reviews)</span
+							>
+							<span
+								><i class="fas fa-clock gold-accent"></i> Open today
+								9am–7pm</span
+							>
+						</div>
+					</div>
+					<div class="hero-image">
+						<img
+							src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?w=800&auto=format&fit=crop"
+							alt="Luxury barber styling a client with a classic fade haircut"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/800x600/4a2c1d/c9a13b?text=LUXE+BARBER'
+								this.onerror = null
+							"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- SERVICES SECTION with categories & pricing -->
+			<section id="services" class="container" style="padding: 80px 0">
+				<h2 class="section-title">Signature Services</h2>
+				<p class="section-sub">Tailored experiences · transparent pricing</p>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon"><i class="fas fa-cut"></i></div>
+						<div class="service-category">Hair</div>
+						<div class="service-name">Luxury Haircut</div>
+						<div class="price">KSh 2,500</div>
+						<div class="duration"><i class="far fa-clock"></i> 45 min</div>
+						<p style="margin-top: 12px">
+							Consultation, wash, precision cut & style
+						</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon"><i class="fas fa-gem"></i></div>
+						<div class="service-category">Beard</div>
+						<div class="service-name">Royal Beard Trim</div>
+						<div class="price">KSh 1,200</div>
+						<div class="duration"><i class="far fa-clock"></i> 30 min</div>
+						<p>Shape, hot towel, balm finish</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon"><i class="fas fa-spa"></i></div>
+						<div class="service-category">Facial</div>
+						<div class="service-name">Gentleman's Facial</div>
+						<div class="price">KSh 3,200</div>
+						<div class="duration"><i class="far fa-clock"></i> 50 min</div>
+						<p>Deep cleanse, steam & mask</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+						<div class="service-category">Color</div>
+						<div class="service-name">Grey Blending</div>
+						<div class="price">KSh 3,800</div>
+						<div class="duration"><i class="far fa-clock"></i> 60 min</div>
+						<p>Natural-looking coverage</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- GALLERY / PORTFOLIO before & after -->
+			<section id="gallery" class="container" style="padding-bottom: 60px">
+				<h2 class="section-title">Before & After · Our Craft</h2>
+				<p class="section-sub">Real transformations by our master stylists</p>
+				<div class="gallery-grid">
+					<div class="gallery-item">
+						<img
+							src="https://images.unsplash.com/photo-1599351431202-1e0f0137899b?w=600&auto=format&fit=crop"
+							alt="Client before haircut with long, unstyled hair"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/600x400/4a2c1d/c9a13b?text=Before+Haircut'
+								this.onerror = null
+							"
+						/>
+						<span class="gallery-label">BEFORE</span>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&auto=format&fit=crop"
+							alt="Client after haircut with clean fade and styled hair"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/600x400/4a2c1d/c9a13b?text=After+Haircut'
+								this.onerror = null
+							"
+						/>
+						<span class="gallery-label">AFTER · JAMES</span>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="https://images.unsplash.com/photo-1503951914875-1625bf1b4f25?w=600&auto=format&fit=crop"
+							alt="Client before beard trim with unkempt facial hair"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/600x400/4a2c1d/c9a13b?text=Before+Beard'
+								this.onerror = null
+							"
+						/>
+						<span class="gallery-label">BEFORE</span>
+					</div>
+					<div class="gallery-item">
+						<img
+							src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=600&auto=format&fit=crop"
+							alt="Client after beard trim with clean, shaped facial hair"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/600x400/4a2c1d/c9a13b?text=After+Beard'
+								this.onerror = null
+							"
+						/>
+						<span class="gallery-label">AFTER · LINDA</span>
+					</div>
+				</div>
+				<div style="margin-top: 30px; text-align: center">
+					<a
+						href="#"
+						class="btn-outline"
+						style="
+							padding: 12px 28px;
+							border-radius: 40px;
+							text-decoration: none;
+						"
+						><i class="fab fa-instagram"></i> See more on Instagram</a
+					>
+				</div>
+			</section>
+
+			<!-- BOOKING SYSTEM -->
+			<section id="booking" class="container" style="padding: 60px 0">
+				<div class="booking-wrapper">
+					<h2 class="section-title" style="font-size: 2.2rem">
+						Schedule your visit
+					</h2>
+					<p style="margin-bottom: 32px">
+						Choose service, stylist, and preferred time — instant confirmation.
+					</p>
+					<form id="appointmentForm" class="booking-form" novalidate>
+						<div class="form-group">
+							<label for="clientName">Full name</label>
+							<input
+								type="text"
+								id="clientName"
+								name="clientName"
+								placeholder="e.g. John Mwangi"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<label for="clientEmail">Email</label>
+							<input
+								type="email"
+								id="clientEmail"
+								name="clientEmail"
+								placeholder="hello@email.com"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<label for="clientPhone">Phone (SMS reminders)</label>
+							<input
+								type="tel"
+								id="clientPhone"
+								name="clientPhone"
+								placeholder="07xx xxx xxx"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<label for="serviceSelect">Select Service</label>
+							<select id="serviceSelect" name="service" required>
+								<option value="Luxury Haircut · KSh 2500">
+									Luxury Haircut · KSh 2500
+								</option>
+								<option value="Beard Trim · KSh 1200">
+									Beard Trim · KSh 1200
+								</option>
+								<option value="Facial · KSh 3200">Facial · KSh 3200</option>
+								<option value="Haircut + Beard · KSh 3500">
+									Haircut + Beard · KSh 3500
+								</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="stylistSelect">Preferred Stylist</label>
+							<select id="stylistSelect" name="stylist" required>
+								<option value="James (Master Barber)">
+									James (Master Barber)
+								</option>
+								<option value="Linda (Style Director)">
+									Linda (Style Director)
+								</option>
+								<option value="Eric (Beard Specialist)">
+									Eric (Beard Specialist)
+								</option>
+								<option value="Any available">Any available</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="bookingDate">Date</label>
+							<input type="date" id="bookingDate" name="bookingDate" required />
+						</div>
+						<div class="form-group">
+							<label for="timeSelect">Time slot</label>
+							<select id="timeSelect" name="timeSlot" required>
+								<option>9:00 AM</option>
+								<option>10:00 AM</option>
+								<option>11:00 AM</option>
+								<option>12:00 PM</option>
+								<option>2:00 PM</option>
+								<option>3:30 PM</option>
+								<option>5:00 PM</option>
+								<option>6:00 PM</option>
+							</select>
+						</div>
+						<div
+							class="full-width"
+							style="display: flex; gap: 16px; align-items: center"
+							role="group"
+							aria-label="Booking actions"
+						>
+							<button type="submit" class="btn" style="padding: 16px 42px">
+								Confirm Booking
+							</button>
+							<span style="color: var(--taupe)"
+								><i class="far fa-calendar-check"></i> Google Calendar sync
+								available</span
+							>
+						</div>
+					</form>
+					<div id="bookingFeedback" aria-live="polite">
+						<i
+							class="fas fa-check-circle"
+							style="color: #2e7d32"
+							aria-hidden="true"
+						></i>
+						<span id="feedbackMsg"></span>
+						<div style="margin-top: 10px">
+							<a href="#" id="gCalLink" target="_blank" class="cal-link"
+								><i class="fab fa-google"></i> Add to Google Calendar</a
+							>
+						</div>
+					</div>
+					<p style="margin-top: 20px; font-size: 0.9rem">
+						<i class="fas fa-envelope gold-accent"></i> Confirmation email & SMS
+						will be sent (demo integration)
+					</p>
+				</div>
+			</section>
+
+			<!-- TESTIMONIALS -->
+			<section id="testimonials" class="container" style="padding: 40px 0 80px">
+				<h2 class="section-title">Client love</h2>
+				<div class="testimonial-grid">
+					<div class="testimonial-card">
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"Best fade in Nairobi! James is an artist. Warm atmosphere and
+							great coffee."
+						</p>
+						<div class="client">
+							<img
+								src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+								alt="Happy client smiling after haircut"
+								onerror="
+									this.src =
+										'https://via.placeholder.com/100x100/4a2c1d/c9a13b?text=Client'
+									this.onerror = null
+								"
+							/>
+							<strong>Kevin O.</strong>
+						</div>
+						<small style="color: var(--taupe)">via Google</small>
+					</div>
+					<div class="testimonial-card">
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"Linda gave me the perfect modern mullet. She listened to exactly
+							what I wanted."
+						</p>
+						<div class="client">
+							<img
+								src="https://images.unsplash.com/photo-1494790108755-2616c71b5c04?w=100&h=100&fit=crop"
+								alt="Happy client showing off new hairstyle"
+								onerror="
+									this.src =
+										'https://via.placeholder.com/100x100/4a2c1d/c9a13b?text=Client'
+									this.onerror = null
+								"
+							/>
+							<strong>Amina W.</strong>
+						</div>
+						<small>via Instagram</small>
+					</div>
+					<div class="testimonial-card">
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"Beard trim and hot towel shave — pure luxury. I'm a regular now."
+						</p>
+						<div class="client">
+							<img
+								src="https://images.unsplash.com/photo-1531427186611-525f1c112ea6?w=100&h=100&fit=crop"
+								alt="Happy client after beard service"
+								onerror="
+									this.src =
+										'https://via.placeholder.com/100x100/4a2c1d/c9a13b?text=Client'
+									this.onerror = null
+								"
+							/>
+							<strong>Daniel M.</strong>
+						</div>
+						<small>via Facebook</small>
+					</div>
+				</div>
+			</section>
+
+			<!-- BLOG TIPS (optional) -->
+			<section class="container">
+				<h2 class="section-title">From the Chair · Tips</h2>
+				<div class="blog-grid">
+					<div class="blog-card">
+						<img
+							src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&auto=format&fit=crop"
+							alt="Barber applying beard oil to client's beard"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/600x400/4a2c1d/c9a13b?text=Beard+Care+Tips'
+								this.onerror = null
+							"
+						/>
+						<div class="blog-content">
+							<h4>3 steps to a softer beard</h4>
+							<p>
+								Use beard oil daily, exfoliate weekly, and trim with precision.
+							</p>
+						</div>
+					</div>
+					<div class="blog-card">
+						<img
+							src="https://images.unsplash.com/photo-1595476108010-b4d1f102b5b1?w=600&auto=format&fit=crop"
+							alt="Modern textured crop haircut style"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/600x400/4a2c1d/c9a13b?text=Hair+Trends'
+								this.onerror = null
+							"
+						/>
+						<div class="blog-content">
+							<h4>2025 textured crops</h4>
+							<p>
+								Low maintenance, high impact. Ask your stylist for a crop fade.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT & LOCATION + Google Maps -->
+			<section id="contact" class="container" style="padding: 80px 0 40px">
+				<h2 class="section-title">Visit us</h2>
+				<div class="contact-grid">
+					<div class="map-container">
+						<iframe
+							title="Google Map"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808467264477!2d36.81209931533145!3d-1.263103535956746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1739c68f3c2b%3A0x4d3a1a33a2e2b3f7!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1614320000000"
+							width="100%"
+							height="100%"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+						></iframe>
+					</div>
+					<div class="hours-box">
+						<h3 style="color: var(--deep-brown)">
+							<i class="fas fa-clock gold-accent"></i> Opening hours
+						</h3>
+						<ul class="hours-list">
+							<li><span>Monday - Friday</span> <span>9:00 – 19:00</span></li>
+							<li><span>Saturday</span> <span>9:00 – 18:00</span></li>
+							<li><span>Sunday & Holidays</span> <span>10:00 – 16:00</span></li>
+						</ul>
+						<div style="margin-top: 30px">
+							<p>
+								<i class="fas fa-phone gold-accent"></i>
+								<a href="tel:+254700123456" style="color: var(--deep-brown)"
+									>+254 700 123 456</a
+								>
+								(click to call)
+							</p>
+							<p>
+								<i class="fas fa-map-marker-alt gold-accent"></i> Mpaka Road,
+								Westlands, Nairobi
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- NEWSLETTER SIGNUP -->
+			<div class="container newsletter">
+				<div
+					style="
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
+					"
+				>
+					<div>
+						<h3 style="color: var(--warm-gold); font-size: 2rem">Stay sharp</h3>
+						<p>Subscribe for exclusive offers & grooming tips.</p>
+					</div>
+					<div class="newsletter-form">
+						<input type="email" placeholder="Your email address" />
+						<button
+							class="btn"
+							style="background: var(--warm-gold); color: var(--deep-brown)"
+						>
+							Sign Up
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div
+				class="container"
+				style="
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: center;
+				"
+			>
+				<div>© 2025 LUXE BARBER · Nairobi</div>
+				<div style="display: flex; gap: 28px">
+					<a href="#" style="color: #ddd2c6"
+						><i class="fab fa-instagram fa-lg"></i
+					></a>
+					<a href="#" style="color: #ddd2c6"
+						><i class="fab fa-facebook fa-lg"></i
+					></a>
+					<a href="#" style="color: #ddd2c6"
+						><i class="fab fa-tiktok fa-lg"></i
+					></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
