@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "services-website-billydev"
-  }
+  },
+  "targets": {
+    "services-website-billydev": {
+      "hosting": {
+        "main-site": [
+          "luxe-barber-billydev"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
